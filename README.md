@@ -211,7 +211,7 @@ Built with ❤️ by:
 
 ## 📞 Contact
 
-- **Issues**: [Report a bug](https://github.com/yourusername/privacy-forensics/issues)
+- **Issues**: Report a bug
 - **Email**: rohanrk212@gmail.com, salway.hrishikesh@gmail.com, moreharsh2001@gmail.com
 
 ---
