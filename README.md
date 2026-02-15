@@ -198,9 +198,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Team
 
 Built with ❤️ by:
-- **[Your Name]** - Full Stack Development
-- **[Teammate Name]** - Frontend & Extension Development
-- **[Teammate Name]** - Backend & AI Integration
+- **Rohan Khandare** - Full Stack Development
+- **Harsh More** - Full Stack Development
+- **Hrishikesh Salway** - Full Stack Development
 
 ## 🙏 Acknowledgments
 
