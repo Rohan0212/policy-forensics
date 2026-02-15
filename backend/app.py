@@ -13,6 +13,8 @@ CORS(app)
 # Initialize clients
 risk_analyzer = RiskAnalyzer()
 backboard = BackboardClient(os.getenv('BACKBOARD_API_KEY'))
+received_page = None
+
 
 @app.route('/health', methods=['GET'])
 def health():
@@ -38,6 +40,20 @@ def analyze():
     
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+
+@app.route("/receive_data", methods=["POST"])
+def receive_data():
+    global received_page
+    data = request.get_json()
+    received_page = data.get("page_text", "")
+    print("Page text received:", received_page[:200], "...")  # print first 200 chars
+    return jsonify({"status": "ok"})
+
+@app.route("/get_page", methods=["GET"])
+def get_page():
+    global received_page
+    return jsonify({"page_text": received_page or ""})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function PolicyInput({ onAnalyze, loading }) {
   const [policyText, setPolicyText] = useState("");
@@ -26,8 +26,16 @@ We reserve the right to monetize user data in ways we deem appropriate.`;
     setPolicyText(sample);
   };
 
+  useEffect(() => {
+        fetch("http://127.0.0.1:5000/get_page")
+            .then(res => res.json())
+            .then(data => setPolicyText(data.page_text))
+            .catch(err => console.error(err));
+    }, []);
+
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
+      
       <h2 className="text-2xl font-bold text-gray-900 mb-4">
         Paste Privacy Policy
       </h2>

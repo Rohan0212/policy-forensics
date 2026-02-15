@@ -85,7 +85,7 @@ class BackboardClient:
             # Create assistant
             print("🤖 Creating Backboard assistant with RAG...")
             assistant_config = {
-                "name": "PolicyX-Ray GDPR Analyzer",
+                "name": "Policy Forensics GDPR Analyzer",
                 "system_prompt": """You are a GDPR compliance expert. Analyze privacy policy clauses against GDPR regulations.
 
 When analyzing clauses:
