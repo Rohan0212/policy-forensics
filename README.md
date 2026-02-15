@@ -211,9 +211,8 @@ Built with ❤️ by:
 
 ## 📞 Contact
 
-- **Project Link**: [https://github.com/yourusername/privacy-forensics](https://github.com/yourusername/privacy-forensics)
 - **Issues**: [Report a bug](https://github.com/yourusername/privacy-forensics/issues)
-- **Email**: your.email@example.com
+- **Email**: rohanrk212@gmail.com, salway.hrishikesh@gmail.com, moreharsh2001@gmail.com
 
 ---
 
