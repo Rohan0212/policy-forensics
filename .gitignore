@@ -1,0 +1,9 @@
+hacknc/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
